@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url(bg-intro-desktop.png);
+  background-color: rgba(252, 102, 102, 0.8);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 80px;
+}
+.left {
+  color: white;
+  padding: 100px 80px;
+}
+h1 {
+  font-weight: 900;
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.left  > p {
+  font-size: 17px;
+} 
+.right {
+  margin: 2px;
+}
+.right p:nth-child(1) {
+  background-color: rgb(66, 66, 175);
+  color: white;
+  width: 450px;
+  height: 50px;
+  text-align: center;
+  padding: 16px 2px;
+  border-radius: 10px;
+  box-shadow: 0 6px 0 #00000029;
+}
+.right p span {
+  font-weight: 900;
+  font-size: 16px;
+}
+form {
+  display: block;
+  padding: 3px;
+  background-color: white;
+  color: black;
+  width: 450px;
+  height: 420px;
+  border-radius: 10px;
+  box-shadow: 0 6px 0 #00000029;
+}
+input {
+  border-radius: 5px;
+  display: block;
+  padding: 15px;
+  margin: 20px;
+  width: 400px;
+  border: 1px solid rgb(221, 207, 207);
+}
+#submit {
+  color: #fff;
+  background-color: green;
+}
+#submit:hover {
+  background-color: rgb(0, 255, 0, 0.9);
+}
+form p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+  body {
+    margin: 0;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 450px;
+    height: 900px;
+    margin-top: 0;
+    margin-left: 200px;
+  }
+  .left {
+    color: white;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  body {
+    margin: 0;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 450px;
+    height: 900px;
+    margin-top: 0;
+    margin-left: 60px;
+  }
+  .left {
+    color: white;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    background-image: url(bg-intro-mobile.png);
+    background-color: rgb(231, 100, 100);
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 450px;
+    height: 900px;
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  .left {
+    color: white;
+    padding: 0;
+  }
+}
